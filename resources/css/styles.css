@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Preloader */
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Righteous';
+    background-image: url(../img/background-desk.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+}
+
+.percent {
+    color: rgb(63, 63, 63);
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.progress-bar {
+    width: 406px;
+    height: 21px;
+    background: #111;
+    border-radius: 13px;
+    box-sizing: border-box;
+}
+
+.progress {
+    width: 200px;
+    height: 21px;
+    background: rgb(168,73,73);
+    border-radius: 13px;
+}
+.wrapper {
+    width: 100%;
+}
+/* move to the back of the file!!!!!!!important*/
+/* Settings for smaller devices */
+
+
+#dim-screen {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-image: linear-gradient(to right ,#C9D6FF, #E2E2E2);
+    width: 100%;
+    height: 2vh;
+}
+#heading-1 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    color: rgb(63, 63, 63);
+    text-shadow:6px 2px rgb(168, 73, 73);
+    font-size: 8em;
+}
+
+#heading-1 #instructions {
+    color: rgb(63, 63, 63);
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+#instructions {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    height: 98vh;
+    background-image: url(../img/background-desk.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+
+}
+
+#computer {
+    display: none;
+    justify-content: flex-end;
+    padding-top: 150px;
+    width: 50%;
+    height: auto;
+}
+
+#pc-picture {
+    width: 500px;
+}
+
+.screen {
+    display: flex;
+    position: absolute;
+    margin-left: -61px;
+    margin-top: 43px;
+}
+
+#screen-on {
+    visibility: hidden;
+    width: 366px;
+    box-shadow: 2px 2px 170px rgb(0, 110, 255), 2px 2px 13px rgb(0, 110, 255), rgb(0, 110, 255) 25px 2px 157px inset;
+    border-radius: 22px;
+
+}
+
+#monitor-light {
+    position: absolute;
+    margin-top: 338px;
+    margin-left: -79px;
+}
+
+#monitor-btn {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -70px;
+}
+
+#monitor-btn:hover {
+    cursor: pointer;
+}
+
+.computer-preloader{
+    width: 366px;
+    height: 272px;
+    position: absolute;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}   
+
+.computer-preloader .pc-loading {   
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.computer-preloader .loading-bar {
+    opacity: 90%;
+    box-shadow: 2px 2px 12px rgb(255, 255, 255);
+    width: 200px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 13px;
+}
+
+.computer-preloader .loading-text {
+    font-family: 'Press Start 2P', cursive;
+    opacity: 90%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.computer-preloader .loading-progress {
+    width: 200px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 13px;
+}
+
+#icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icons img {
+    width: 50px;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1006px) {
+    header {
+        height: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+    h1 {
+        font-size:4.5em;
+        text-align: center;
+    }
+    #hero-container {
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+    #computer {
+        justify-content: center;
+        padding-top: 0;
+        width: 100%;
+    }
+    #heading-1 {
+        width: 100%;
+    }
+    
+    #pc-picture {
+        width: 450px;
+    }
+
+    #monitor-btn  {
+        margin-top: 317px;
+        margin-left: 145px;
+    }
+
+    #monitor-button {
+        width: 30px;
+
+    }
+
+    #monitor-light {
+        position: absolute;
+        margin-top: 303px;
+        margin-left: 144px;
+    }
+        
+    .screen {
+        position: absolute;
+        margin-top: 41px;
+        margin-left: 0;
+    }
+    
+    #screen-on {
+        width: 333px;
+    }
+    #heading-1 #instructions {
+        font-size: 1.5em;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .main-elements {
+        flex-direction: column-reverse;
+    }
+
+    #icons {
+        display: inline-flex;
+        order: 1;
+    }
+
+    #icons img {
+        width: 30px;
+    }
+    
+}
